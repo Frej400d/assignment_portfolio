@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Assignment Portfolio</title>
+    <title>Responsive design</title>
 
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -41,17 +41,74 @@
         <span class="bar"></span>
       </div>
     </nav>
-    <header>
+    <header class="assign-header">
       <div class="header-text">
-        <h1>Assignment Portfolio</h1>
-        <p>
-          Hello and welcome to my assignment portfolio for the theme Design for
-          Developers
-        </p>
-        <p>- Freja Hee Eun Smith-Pedersen</p>
+        <h1>Responsive design</h1>
       </div>
     </header>
-    <main></main>
+    <main id="responsive">
+      <section class="mock-up">
+        <div class="mock-up-container">
+          <div class="mock-up-text">
+            <h2>Mockup</h2>
+            <p>
+              In this assignment I worked with responsive web design where I
+              focused on the layout. I started by analyzing the html and
+              figuring out whether I should implement grid or flexbox. I mostly
+              used grid for layout and flexbox for components since grid is
+              generally better for layout and flexbox generally is better for
+              components. Sometimes I added extra divs so designing the layout
+              was easier.
+            </p>
+          </div>
+          <div class="mock-up-img-container">
+            <img
+              class="mock-up-img"
+              src="img/responsive_mockup.png"
+              alt="responsive mockup"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="details">
+        <div class="details-container">
+          <div class="details-text">
+            <h2>Details</h2>
+            <p>
+              I also used media queries to better control the layout on
+              different screen sizes. For example in the Meet the Team section
+              web version I utilize the space I have by having a two column grid
+              with plenty of breathing space for my image and info. I have also
+              added margins so the content does not get too big. In the mobile
+              version I have kept in mind that it is a smaller screen and again
+              utilized the little space I do have by making margins minimal and
+              removing the grid.
+            </p>
+          </div>
+          <div class="details-img-container">
+            <img
+              class="details-img"
+              src="img/responsive_details.png"
+              alt="responsive details"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="buttons">
+        <form
+          target="_blank"
+          action="https://github.com/Frej400d/12c.01.04.responsive-design.git"
+        >
+          <input class="button" type="submit" value="Link to Github" />
+        </form>
+        <form
+          target="_blank"
+          action="https://pandapoob.com/kea/12_design/responsive_design/"
+        >
+          <input class="button" type="submit" value="Link to Solution" />
+        </form>
+      </section>
+    </main>
     <footer>
       <section id="footer-logo">
         <a href="index.html"
