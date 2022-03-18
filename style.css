@@ -156,7 +156,7 @@ a {
 }
 
 /*HEADER*/
-header {
+#frontpage-header {
   background-color: var(--color-lighter);
   padding-block: 5rem;
   padding-inline: 1rem;
@@ -166,7 +166,7 @@ header {
   justify-content: space-around;
 }
 
-header p {
+#frontpage-header p {
   text-align: center;
 }
 /*INTRO*/
@@ -296,6 +296,41 @@ footer p {
   margin-top: 1rem;
 }
 
+/*FONTS & UI CARDS*/
+#fonts h2 {
+  font-size: 2rem;
+}
+
+.assign-header {
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.assign-header h1 {
+  font-size: 3rem;
+}
+
+.mock-up {
+  padding-block: 2rem 4rem;
+  padding-inline: 1rem;
+  background-color: var(--color-light);
+}
+
+.mock-up-img-container {
+  margin-top: 1.5rem;
+}
+
+.mock-up-img {
+  max-width: 35rem;
+}
+
+.details {
+  padding: 1rem;
+  background-color: var(--color-lighter);
+}
+
 @media (min-width: 790px) {
   /*INTRO*/
   #intro {
@@ -363,6 +398,23 @@ footer p {
     text-align: left;
     margin-bottom: 0;
   }
+
+  /*FONTS AND UI CARDS*/
+  .assign-header h1 {
+    font-size: 4rem;
+  }
+
+  #fonts h2 {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+
+  .mock-up-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -372,5 +424,14 @@ footer p {
 
   .card-container {
     margin-inline: 10rem;
+  }
+
+  .mock-up {
+    margin-inline: 10rem 0;
+  }
+
+  .mock-up-container {
+    gap: 8rem;
+    margin-inline: 5rem 5rem;
   }
 }

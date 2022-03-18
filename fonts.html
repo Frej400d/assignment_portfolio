@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Assignment Portfolio</title>
+    <title>Fonts & UI cards</title>
 
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -41,17 +41,70 @@
         <span class="bar"></span>
       </div>
     </nav>
-    <header>
+    <header class="assign-header">
       <div class="header-text">
-        <h1>Assignment Portfolio</h1>
-        <p>
-          Hello and welcome to my assignment portfolio for the theme Design for
-          Developers
-        </p>
-        <p>- Freja Hee Eun Smith-Pedersen</p>
+        <h1>Fonts & UI cards</h1>
       </div>
     </header>
-    <main></main>
+    <main id="fonts">
+      <section class="mock-up">
+        <div class="mock-up-container">
+          <div class="mock-up-text">
+            <h2>Mockup</h2>
+            <p>
+              This assignment was all about fonts and UI cards. I first
+              researched a display font and a paragraph font I thought went well
+              together. After that I applied the fonts. The bigger fonts like h1
+              and h2 have the display font applied however as I implemented the
+              font hierarchy I quickly noticed that h3 and h4 would be
+              unreadable as a display font and therefore changed those to my
+              paragraph font. Call to action buttons and links are all in a
+              paragraph font because they should be easy and fast to read. I
+              used the unit rem for fonts, line height, margins etc. as this is
+              also a big part of setting type.
+            </p>
+          </div>
+          <div class="mock-up-img-container">
+            <img
+              class="mock-up-img"
+              src="img/font_mockup.png"
+              alt="font mockup"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="details">
+        <div class="details-text">
+          <h2>Details</h2>
+          <p>
+            When it came to my card design I have chosen a muted pink and given
+            them a shadow to make the cards stand out from the white background.
+            I have all my cards in a card container that is in a grid layout.
+            The cards themselves are designed with flexbox. This is because grid
+            is generally better for layouts and flexbox is generally better for
+            components. I have applied font hierarchy in my cards and "grouped"
+            the different information to make it more readable and
+            comprehensible. I have also applied colors on my buttons so they
+            clearly indicate their intention.
+          </p>
+        </div>
+        <div class="details-img-container">
+          <img src="img/font_details.png" alt="font details" />
+        </div>
+      </section>
+      <section class="buttons">
+        <button>
+          <a href="https://github.com/Frej400d/12c.01.01-fonts-and-cards.git"
+            >Link to Github</a
+          >
+        </button>
+        <button>
+          <a href="https://pandapoob.com/kea/12_design/fonts_and_cards/"
+            >Link to Solution</a
+          >
+        </button>
+      </section>
+    </main>
     <footer>
       <section id="footer-logo">
         <a href="index.html"
