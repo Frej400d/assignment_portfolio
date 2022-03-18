@@ -28,16 +28,17 @@ h1 {
   font-family: var(--font-display);
   font-weight: 400;
   font-size: 4rem;
-  margin: 1rem;
   margin-bottom: 2rem;
   text-align: center;
 }
 
 h2 {
+  color: var(--color-dark);
   font-family: var(--font-display);
-  font-size: 2rem;
+  font-weight: 400;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: var(--color-darker);
+  text-align: center;
 }
 
 h3 {
@@ -61,6 +62,7 @@ p {
   font-size: 1rem;
 }
 
+/*MENU*/
 .nav-item a {
   color: var(--color-lighest);
   font-family: var(--font-paragraph);
@@ -71,7 +73,6 @@ p {
   width: 3rem;
 }
 
-/*MENU*/
 .navbar {
   background-color: var(--color-dark);
   padding: 1rem 2rem;
@@ -110,7 +111,7 @@ p {
   background-color: var(--color-lighest);
 }
 
-@media (max-width: 790px) {
+@media (max-width: 805px) {
   /*MENU*/
   .hamburger {
     display: block;
@@ -152,10 +153,38 @@ header {
   background-color: var(--color-lighter);
   padding-block: 5rem;
   padding-inline: 1rem;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 header p {
   text-align: center;
+}
+
+/*INFO*/
+#info {
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.info-text {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.info-graphic-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.info-graphic {
+  max-width: 35rem;
 }
 
 /*INTRO*/
@@ -198,6 +227,17 @@ footer p {
 }
 
 @media (min-width: 790px) {
+  /*INFO*/
+  #info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  #info h2 {
+    text-align: left;
+  }
+
   /*FOOTER*/
   footer {
     display: grid;
@@ -220,5 +260,11 @@ footer p {
   .footer-text {
     text-align: left;
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  #info {
+    margin-inline: 10rem;
   }
 }
