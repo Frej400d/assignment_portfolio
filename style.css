@@ -73,8 +73,7 @@ form {
   box-shadow: -4px 12px 8px #7a688f;
   border: none;
   border-radius: 0.5rem;
-  padding: 1rem;
-  padding-inline: 3rem;
+
   cursor: pointer;
   min-width: 8rem;
   display: flex;
@@ -90,6 +89,8 @@ input.button {
   font-weight: 600;
   border: none;
   cursor: pointer;
+  padding: 1rem;
+  padding-inline: 3rem;
 }
 
 form:hover {
@@ -400,16 +401,16 @@ footer p {
 }
 
 /*COLORS & ANIMATION*/
-#colors h3 {
+#color-mockup h3 {
   margin-top: 3rem;
   margin-bottom: 1rem;
   text-align: center;
 }
 
 #color-mockup {
-  min-height: 60vh;
   background-color: var(--color-lighter);
   padding: 1rem;
+  padding-bottom: 4rem;
 }
 
 .color-img {
@@ -422,6 +423,24 @@ footer p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.mockup-color-img {
+  max-width: 30rem;
+}
+
+#color-details {
+  margin-top: 10rem;
+}
+
+#color-details h3 {
+  margin-left: 0;
+  margin-bottom: 1rem;
+}
+
+#animation-detail h3 {
+  margin-left: 0;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 790px) {
@@ -569,7 +588,7 @@ footer p {
   #color-mockup h2 {
     margin-bottom: 3rem;
   }
-  #colors h3 {
+  #color-mockup h3 {
     margin-left: 2rem;
     text-align: left;
   }
@@ -616,7 +635,7 @@ footer p {
   .color-mockup-container {
     margin-inline: 10rem;
   }
-  #colors h3 {
+  #color-mockup h3 {
     margin-left: 3rem;
   }
 }
