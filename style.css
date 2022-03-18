@@ -43,10 +43,11 @@ h2 {
 
 h3 {
   font-family: var(--font-paragraph);
-  margin-top: 1rem;
-  margin-bottom: 0.3rem;
+  color: var(--color-dark);
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
   text-align: center;
-  color: var(--color-darker);
 }
 
 h4 {
@@ -60,6 +61,10 @@ p {
   font-family: var(--font-paragraph);
   line-height: 2rem;
   font-size: 1rem;
+}
+
+a {
+  font-family: var(--font-paragraph);
 }
 
 /*MENU*/
@@ -162,14 +167,13 @@ header {
 header p {
   text-align: center;
 }
-
-/*INFO*/
-#info {
+/*INTRO*/
+#intro {
   padding: 1rem;
   margin-top: 2rem;
 }
 
-.info-text {
+.intro-text {
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
@@ -177,17 +181,68 @@ header p {
   justify-content: space-around;
 }
 
-.info-graphic-container {
+.intro-graphic-container {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-.info-graphic {
+.intro-graphic {
   max-width: 35rem;
 }
 
-/*INTRO*/
+/*ASSIGNMENTS*/
+#assignments {
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  background-color: var(--color-light);
+  padding-block: 2rem;
+}
+
+#assignments h2 {
+  margin: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  grid-gap: 1rem;
+  margin-inline: 1rem;
+}
+
+.card {
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--color-lighest);
+  box-shadow: -5px 12px 10px #7a688f;
+  width: 300px;
+}
+
+.img-container {
+  margin-inline: 1.5rem;
+}
+
+.card p {
+  margin-inline: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.card a {
+  margin-inline: 1.5rem;
+  text-align: end;
+  padding: 1rem;
+  color: var(--color-cta);
+  font-size: 1.2rem;
+}
+
+/*FOOTER*/
 footer {
   background-color: var(--color-dark);
   padding: 1rem;
@@ -227,15 +282,40 @@ footer p {
 }
 
 @media (min-width: 790px) {
-  /*INFO*/
-  #info {
+  /*INTRO*/
+  #intro {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
 
-  #info h2 {
+  #intro h2 {
     text-align: left;
+  }
+
+  /*ASSIGNMENTS*/
+  .assignments-container {
+    margin-bottom: 0;
+  }
+
+  #assignments {
+    background-color: transparent;
+  }
+
+  #assignments h2 {
+    font-size: 4rem;
+    margin-top: 3.5rem;
+  }
+
+  .assignments-container {
+    background-color: var(--color-light);
+    padding: 1rem;
+    padding-bottom: 10rem;
+    height: 25vh;
+  }
+
+  .card-container {
+    margin-top: -10rem;
   }
 
   /*FOOTER*/
@@ -264,7 +344,11 @@ footer p {
 }
 
 @media (min-width: 1200px) {
-  #info {
+  #intro {
+    margin-inline: 10rem;
+  }
+
+  .card-container {
     margin-inline: 10rem;
   }
 }
