@@ -22,6 +22,11 @@ img {
   height: auto;
 }
 
+#fp-header {
+  z-index: 1;
+  background-color: var(--color-lighter);
+}
+
 /* Fonts */
 h1 {
   color: var(--color-dark);
@@ -186,13 +191,14 @@ form:hover {
 
 /*HEADER*/
 #frontpage-header {
-  background-color: var(--color-lighter);
   padding-block: 5rem;
   padding-inline: 1rem;
   min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  z-index: 3;
+  position: relative;
 }
 
 #frontpage-header p {
@@ -637,5 +643,61 @@ footer p {
   }
   #color-mockup h3 {
     margin-left: 3rem;
+  }
+}
+
+.circle-container {
+  z-index: 2;
+  position: absolute;
+  width: 30rem;
+  height: 30rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 30rem;
+}
+
+.circle {
+  position: absolute;
+  width: 30rem;
+  height: 30rem;
+  background: yellow;
+  border-radius: 50rem;
+  transform: scale(0);
+  opacity: 0;
+  transform-origin: 50% 50%;
+  animation: pulse 2s cubic-bezier(0.5, 0.5, 0, 1);
+}
+
+.circle:nth-child(2) {
+  position: absolute;
+  width: 30rem;
+  height: 30rem;
+  background: red;
+  border-radius: 50rem;
+  transform: scale(0);
+  opacity: 0;
+  transform-origin: 50% 50%;
+  animation: pulse 2s 0.75s cubic-bezier(0.5, 0.5, 0, 1);
+}
+
+.circle:nth-child(3) {
+  position: absolute;
+  width: 30rem;
+  height: 30rem;
+  background: green;
+  border-radius: 50rem;
+  transform: scale(0);
+  opacity: 0;
+  transform-origin: 50% 50%;
+  animation: pulse 2s 1.5s cubic-bezier(0.5, 0.5, 0, 1);
+}
+
+@keyframes pulse {
+  25% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1);
   }
 }
