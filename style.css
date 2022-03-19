@@ -240,7 +240,7 @@ form:hover {
 }
 
 #assignments h2 {
-  margin: 1rem;
+  margin-inline: 1rem;
   margin-bottom: 1.5rem;
 }
 
@@ -250,6 +250,8 @@ form:hover {
   flex-wrap: wrap;
   grid-gap: 1rem;
   margin-inline: 1rem;
+  margin-top: 3rem;
+  opacity: 0;
 }
 
 .card {
@@ -473,6 +475,7 @@ footer p {
 
   #assignments {
     background-color: transparent;
+    padding-block: 2rem;
   }
 
   #assignments h2 {
@@ -483,12 +486,11 @@ footer p {
   .assignments-container {
     background-color: var(--color-light);
     padding: 1rem;
-    padding-bottom: 10rem;
     height: 25vh;
   }
 
   .card-container {
-    margin-top: -10rem;
+    margin-top: 0;
   }
 
   /*CONCLUSION*/
@@ -651,8 +653,14 @@ footer p {
   #color-mockup h3 {
     margin-left: 3rem;
   }
+
+  .assignments-container {
+    padding-bottom: 10rem;
+  }
 }
 
+/*ANIMATIONS*/
+/*HEADER CIRCLE PULSE*/
 .circle-container {
   z-index: 2;
   position: absolute;
