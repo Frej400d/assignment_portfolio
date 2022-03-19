@@ -27,6 +27,10 @@ img {
   background-color: var(--color-lighter);
 }
 
+.header-text-ani {
+  opacity: 0;
+}
+
 /* Fonts */
 h1 {
   color: var(--color-dark);
@@ -493,6 +497,9 @@ footer p {
     font-size: 4rem;
   }
 
+  .conclu-text p {
+    margin-top: 2rem;
+  }
   /*FOOTER*/
   footer {
     display: grid;
@@ -649,20 +656,20 @@ footer p {
 .circle-container {
   z-index: 2;
   position: absolute;
-  width: 30rem;
-  height: 30rem;
+  width: 41rem;
+  height: 41rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 30rem;
+  max-width: 41rem;
 }
 
 .circle {
   position: absolute;
-  width: 30rem;
-  height: 30rem;
-  background: yellow;
-  border-radius: 50rem;
+  width: 41rem;
+  height: 41rem;
+  background: var(--color-cta);
+  border-radius: 40rem;
   transform: scale(0);
   opacity: 0;
   transform-origin: 50% 50%;
@@ -671,9 +678,9 @@ footer p {
 
 .circle:nth-child(2) {
   position: absolute;
-  width: 30rem;
-  height: 30rem;
-  background: red;
+  width: 41rem;
+  height: 41rem;
+  background: var(--color-cta);
   border-radius: 50rem;
   transform: scale(0);
   opacity: 0;
@@ -683,9 +690,9 @@ footer p {
 
 .circle:nth-child(3) {
   position: absolute;
-  width: 30rem;
-  height: 30rem;
-  background: green;
+  width: 41rem;
+  height: 41rem;
+  background: var(--color-cta);
   border-radius: 50rem;
   transform: scale(0);
   opacity: 0;
