@@ -272,16 +272,42 @@ form:hover {
   margin-top: 1.5rem;
 }
 
+.card-link-container {
+  display: flex;
+  justify-content: end;
+  padding: 1rem;
+}
+
 .card p {
   margin-inline: 1.5rem;
 }
 
 .card a {
   margin-inline: 1.5rem;
-  text-align: end;
-  padding: 1rem;
+  padding: 0.5rem 0.5rem;
   color: var(--color-cta);
   font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.hover-effect {
+  display: inline-block;
+  padding-bottom: 0.25rem; /* defines the space between text and underline */
+  position: relative;
+}
+
+.hover-effect::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  bottom: 6px;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-cta);
+  transition: width 0.2s ease-in-out;
+}
+.hover-effect:hover::before {
+  width: 85%;
 }
 
 /*CONCLUSION*/
