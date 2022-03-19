@@ -407,9 +407,6 @@ footer p {
 }
 
 /*FRAMEWORK*/
-.fw-content-wrapper {
-  min-height: 60vh;
-}
 
 .fw-mockup {
   background-color: var(--color-light);
@@ -425,6 +422,10 @@ footer p {
 
 .fw-img {
   max-width: 35rem;
+}
+
+#frameworks h2 {
+  font-size: 2rem;
 }
 
 /*COLORS & ANIMATION*/
@@ -473,7 +474,6 @@ footer p {
 /*RESPONSIVE*/
 #responsive h2 {
   font-size: 2rem;
-  text-align: left;
 }
 
 @media (min-width: 790px) {
@@ -592,6 +592,7 @@ footer p {
   .fw-img-wrapper {
     display: flex;
     justify-content: center;
+    align-content: center;
   }
 
   .fw-mockup {
@@ -626,6 +627,12 @@ footer p {
   }
   #color-mockup h3 {
     margin-left: 2rem;
+    text-align: left;
+  }
+
+  /*RESPONSIVE*/
+
+  #responsive h2 {
     text-align: left;
   }
 }
@@ -666,7 +673,7 @@ footer p {
     padding-inline: 5rem 5rem;
   }
   .fw-img {
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
   .color-mockup-container {
     margin-inline: 10rem;
