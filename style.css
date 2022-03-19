@@ -290,37 +290,18 @@ form:hover {
   text-decoration: none;
 }
 
-.hover-effect {
-  display: inline-block;
-  padding-bottom: 0.25rem; /* defines the space between text and underline */
-  position: relative;
-}
-
-.hover-effect::before {
-  content: "";
-  position: absolute;
-  left: 7px;
-  bottom: 6px;
-  width: 0;
-  height: 2px;
-  background-color: var(--color-cta);
-  transition: width 0.2s ease-in-out;
-}
-.hover-effect:hover::before {
-  width: 85%;
-}
-
 /*CONCLUSION*/
 #conclusion {
   background-color: var(--color-lighter);
   padding-inline: 1rem;
   padding-block: 4rem;
-  min-height: 60vh;
+  min-height: 40vh;
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: space-around;
 }
 .conclu-text {
+  opacity: 0;
   max-width: 50rem;
 }
 
@@ -683,6 +664,11 @@ footer p {
   .assignments-container {
     padding-bottom: 10rem;
   }
+
+  #conclusion {
+    padding-top: 10rem;
+    padding-bottom: 0;
+  }
 }
 
 /*ANIMATIONS*/
@@ -741,4 +727,25 @@ footer p {
   100% {
     transform: scale(1);
   }
+}
+
+/*LINK HOVER UNDERLINE*/
+.hover-effect {
+  display: inline-block;
+  padding-bottom: 0.25rem;
+  position: relative;
+}
+
+.hover-effect::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  bottom: 6px;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-cta);
+  transition: width 0.2s ease-in-out;
+}
+.hover-effect:hover::before {
+  width: 85%;
 }

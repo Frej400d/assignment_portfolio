@@ -10,9 +10,9 @@ function start() {
   tl.to(headerText, { duration: 0.75, opacity: 0, scale: 0.6 });
   tl.to(headerText, { duration: 2.5, opacity: 1, scale: 1 });
 
-  cardContainerAni();
+  frontpageScrollAnimations();
 }
-function cardContainerAni() {
+function frontpageScrollAnimations() {
   let cardContainer = document.querySelector(".card-container");
   gsap.to(cardContainer, {
     duration: 3,
@@ -21,9 +21,22 @@ function cardContainerAni() {
     scrollTrigger: {
       trigger: ".assignments-container",
       scrub: 0.5,
-      markers: true,
       start: "top 50%",
       end: "bottom 65%",
+    },
+  });
+
+  let conclusion = document.querySelector(".conclu-text");
+  gsap.to(conclusion, {
+    duration: 3,
+    y: "-10vw",
+    opacity: 1,
+    scrollTrigger: {
+      trigger: "#conclusion",
+      scrub: 0.5,
+      markers: true,
+      start: "top 90%",
+      end: "40% 70%",
     },
   });
 }
