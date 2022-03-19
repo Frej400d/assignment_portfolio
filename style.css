@@ -297,7 +297,7 @@ form:hover {
   padding-block: 4rem;
   min-height: 40vh;
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: space-around;
 }
 .conclu-text {
@@ -664,11 +664,6 @@ footer p {
   .assignments-container {
     padding-bottom: 10rem;
   }
-
-  #conclusion {
-    padding-top: 10rem;
-    padding-bottom: 0;
-  }
 }
 
 /*ANIMATIONS*/
@@ -748,4 +743,14 @@ footer p {
 }
 .hover-effect:hover::before {
   width: 85%;
+}
+
+.right {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.left {
+  transform: translateX(-100%);
+  opacity: 0;
 }

@@ -13,6 +13,28 @@ function start() {
   frontpageScrollAnimations();
 }
 function frontpageScrollAnimations() {
+  gsap.to(".intro-text", {
+    x: "0%",
+    opacity: 1,
+    duration: 1.5,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: "#intro",
+      start: "top 70%",
+    },
+  });
+
+  gsap.to(".intro-graphic-container", {
+    x: "0%",
+    opacity: 1,
+    duration: 1.5,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: "#intro",
+      start: "top 70%",
+    },
+  });
+
   let cardContainer = document.querySelector(".card-container");
   gsap.to(cardContainer, {
     duration: 3,
@@ -28,15 +50,12 @@ function frontpageScrollAnimations() {
 
   let conclusion = document.querySelector(".conclu-text");
   gsap.to(conclusion, {
-    duration: 3,
-    y: "-10vw",
+    duration: 1,
     opacity: 1,
     scrollTrigger: {
       trigger: "#conclusion",
-      scrub: 0.5,
       markers: true,
-      start: "top 90%",
-      end: "40% 70%",
+      start: "top 70%",
     },
   });
 }
