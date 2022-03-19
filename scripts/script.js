@@ -54,7 +54,6 @@ function frontpageScrollAnimations() {
     opacity: 1,
     scrollTrigger: {
       trigger: "#conclusion",
-      markers: true,
       start: "top 70%",
     },
   });
