@@ -17,6 +17,10 @@
   --font-paragraph: "Source Sans Pro", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -24,6 +28,7 @@ img {
 
 #fp-header {
   background-color: var(--color-lighter);
+  overflow: hidden;
 }
 
 .header-text-ani {
@@ -745,22 +750,31 @@ footer p {
 
 /*ANIMATIONS*/
 /*HEADER CIRCLE PULSE*/
+
+.circles {
+  position: relative;
+  top: 40vh;
+  left: 50%;
+}
+
 .circle-container {
+  overflow: hidden;
   z-index: 2;
   position: absolute;
-  width: 41rem;
-  height: 41rem;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
+  width: 40rem;
+  height: 40rem;
   transform: translate(-50%, -50%);
   max-width: 41rem;
 }
 
 .circle {
+  overflow: hidden;
   z-index: 2;
   position: absolute;
-  width: 41rem;
-  height: 41rem;
+  width: 40rem;
+  height: 40rem;
   background: var(--color-cta);
   border-radius: 40rem;
   transform: scale(0);
@@ -770,10 +784,11 @@ footer p {
 }
 
 .circle:nth-child(2) {
+  overflow: hidden;
   z-index: 2;
   position: absolute;
-  width: 41rem;
-  height: 41rem;
+  width: 40rem;
+  height: 40rem;
   background: var(--color-cta);
   border-radius: 50rem;
   transform: scale(0);
@@ -783,10 +798,11 @@ footer p {
 }
 
 .circle:nth-child(3) {
+  overflow: hidden;
   z-index: 2;
   position: absolute;
-  width: 41rem;
-  height: 41rem;
+  width: 40rem;
+  height: 40rem;
   background: var(--color-cta);
   border-radius: 50rem;
   transform: scale(0);
