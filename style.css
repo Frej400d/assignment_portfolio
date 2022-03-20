@@ -396,6 +396,7 @@ footer p {
 
 .buttons {
   margin-top: -1rem;
+  margin-bottom: 1rem;
   min-height: 20vh;
   display: flex;
   flex-wrap: wrap;
@@ -429,16 +430,33 @@ footer p {
 }
 
 /*COLORS & ANIMATION*/
-#color-mockup h3 {
+.color-header {
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#color-mockup h2 {
   margin-top: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
-#color-mockup {
+#colors h2 {
+  font-size: 2rem;
+}
+
+.color-mockup-left {
   background-color: var(--color-lighter);
-  padding: 1rem;
-  padding-bottom: 4rem;
+  padding-inline: 1rem;
+  padding-block: 1rem 3rem;
+}
+
+.color-mockup-right {
+  background-color: var(--color-light);
+  padding-inline: 1rem;
+  padding-block: 1rem 3rem;
 }
 
 .color-img {
@@ -461,14 +479,13 @@ footer p {
   margin-top: 10rem;
 }
 
-#color-details h3 {
+#animation-detail h3 {
   margin-left: 0;
   margin-bottom: 1rem;
 }
 
-#animation-detail h3 {
-  margin-left: 0;
-  margin-bottom: 1rem;
+#animation-detail {
+  padding-block: 3rem 5rem;
 }
 
 /*RESPONSIVE*/
@@ -610,23 +627,32 @@ footer p {
   }
 
   /*COLORS & ANIMATION*/
-  .color-mockup-container {
+  #color-mockup {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-content: center;
-    justify-content: center;
-    gap: 5rem;
+    justify-content: space-around;
   }
 
-  .dark-mode {
-    margin-top: 0;
+  .color-mockup-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
   }
 
-  #color-mockup h2 {
-    margin-bottom: 3rem;
+  .color-mockup-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
   }
-  #color-mockup h3 {
-    margin-left: 2rem;
+
+  #color-details h2 {
+    text-align: left;
+  }
+
+  #animation-detail h2 {
     text-align: left;
   }
 
@@ -678,12 +704,17 @@ footer p {
   .color-mockup-container {
     margin-inline: 10rem;
   }
-  #color-mockup h3 {
-    margin-left: 3rem;
-  }
 
   .assignments-container {
     padding-bottom: 10rem;
+  }
+
+  .color-mockup-left {
+    padding-inline: 5rem 5rem;
+  }
+
+  .color-mockup-right {
+    padding-inline: 5rem 5rem;
   }
 }
 
