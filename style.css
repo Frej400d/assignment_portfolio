@@ -219,6 +219,7 @@ input.button {
   min-height: 60vh;
   padding: 1rem;
   margin-block: 6rem 5rem;
+  overflow: hidden;
 }
 
 .intro-text {
@@ -351,6 +352,10 @@ footer p {
 }
 
 /*FONTS & UI CARDS*/
+#fonts {
+  overflow: hidden;
+}
+
 #fonts h2 {
   font-size: 2rem;
 }
@@ -441,6 +446,10 @@ footer p {
   justify-content: space-around;
 }
 
+#colors {
+  overflow: hidden;
+}
+
 #color-mockup h2 {
   margin-top: 3rem;
   margin-bottom: 2rem;
@@ -493,6 +502,10 @@ footer p {
 }
 
 /*RESPONSIVE*/
+#responsive {
+  overflow: hidden;
+}
+
 #responsive h2 {
   font-size: 2rem;
 }
@@ -597,6 +610,11 @@ footer p {
   }
 
   /*FRAMEWORK*/
+
+  #frameworks h2 {
+    overflow: hidden;
+  }
+
   #frameworks h2 {
     text-align: left;
   }
