@@ -252,7 +252,7 @@ input.button {
   flex-wrap: wrap;
   grid-gap: 1rem;
   margin-inline: 1rem;
-  margin-top: 3rem;
+  margin-top: 10rem;
   opacity: 0;
 }
 
@@ -670,6 +670,7 @@ footer p {
 
   .card-container {
     margin-inline: 10rem;
+    margin-top: 2rem;
   }
 
   .mock-up {
@@ -707,6 +708,10 @@ footer p {
 
   .assignments-container {
     padding-bottom: 10rem;
+  }
+
+  .card-container {
+    margin-top: 0;
   }
 
   .color-mockup-left {
