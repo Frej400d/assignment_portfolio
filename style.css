@@ -23,7 +23,6 @@ img {
 }
 
 #fp-header {
-  z-index: 1;
   background-color: var(--color-lighter);
 }
 
@@ -125,6 +124,8 @@ input.button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 4;
 }
 
 .nav-menu {
@@ -183,7 +184,7 @@ input.button {
     width: 100%;
     text-align: center;
     transition: 0.3s;
-    z-index: 10;
+    z-index: 4;
   }
 
   .nav-item {
@@ -203,8 +204,11 @@ input.button {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  z-index: 3;
   position: relative;
+}
+
+.header-text-ani {
+  z-index: 3;
 }
 
 #frontpage-header p {
@@ -735,6 +739,7 @@ footer p {
 }
 
 .circle {
+  z-index: 2;
   position: absolute;
   width: 41rem;
   height: 41rem;
@@ -747,6 +752,7 @@ footer p {
 }
 
 .circle:nth-child(2) {
+  z-index: 2;
   position: absolute;
   width: 41rem;
   height: 41rem;
@@ -759,6 +765,7 @@ footer p {
 }
 
 .circle:nth-child(3) {
+  z-index: 2;
   position: absolute;
   width: 41rem;
   height: 41rem;
