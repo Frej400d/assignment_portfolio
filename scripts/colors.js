@@ -47,7 +47,6 @@ function animations() {
     ease: "power3.out",
     scrollTrigger: {
       trigger: "#color-mockup",
-      markers: true,
       start: "60% center",
     },
   });

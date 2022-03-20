@@ -35,6 +35,19 @@ function frontpageScrollAnimations() {
     },
   });
 
+  gsap.to(".ass-h2", {
+    opacity: 1,
+    duration: 1.5,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: "#intro",
+      markers: true,
+      scrub: 0.5,
+      start: "bottom 70%",
+      end: "150% 70%",
+    },
+  });
+
   let cardContainer = document.querySelector(".card-container");
   gsap.to(cardContainer, {
     duration: 3,
