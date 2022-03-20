@@ -508,7 +508,11 @@ footer p {
 
   /*ASSIGNMENTS*/
   .assignments-container {
+    background-color: var(--color-light);
+    padding: 1rem;
+    height: 25vh;
     margin-bottom: 0;
+    padding-bottom: 5rem;
   }
 
   #assignments {
@@ -519,12 +523,6 @@ footer p {
   #assignments h2 {
     font-size: 3.5rem;
     margin-top: 3.5rem;
-  }
-
-  .assignments-container {
-    background-color: var(--color-light);
-    padding: 1rem;
-    height: 25vh;
   }
 
   .card-container {
