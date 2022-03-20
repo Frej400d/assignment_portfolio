@@ -6,7 +6,6 @@ function start() {
   console.log("Welcome to my Portfolio");
   let headerText = document.querySelector(".header-text-ani");
   let tl = gsap.timeline({ repeat: 0, repeatDelay: 1 });
-
   tl.to(headerText, { duration: 0.75, opacity: 0, scale: 0.6 });
   tl.to(headerText, { duration: 2.5, opacity: 1, scale: 1 });
 
@@ -41,7 +40,6 @@ function frontpageScrollAnimations() {
     ease: "power3.out",
     scrollTrigger: {
       trigger: "#intro",
-      markers: true,
       scrub: 0.5,
       start: "bottom 70%",
       end: "150% 70%",
